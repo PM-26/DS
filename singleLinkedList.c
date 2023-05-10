@@ -26,14 +26,14 @@ int main(){
         scanf("%d",&ch);
         }
 
-// //view
-// printf("Linked List before deletion.\n");
-// last=first;
-// while (last!=NULL){
-//     printf("%d\t",last->data);
-//     last=last->next;
-// }
-// printf("\n");
+//view
+printf("Linked List before deletion.\n");
+last=first;
+while (last!=NULL){
+    printf("%d\t",last->data);
+    last=last->next;
+}
+printf("\n");
 
 // //delete first element
 // last=first;
@@ -49,26 +49,26 @@ int main(){
 //     last=last->next;
 //     }
 
-// //delete last element
-// last=first;
-// struct node *temp;
-// while(last->next->next!=NULL){
-//     last=last->next;
-// }
-// temp=last->next;
-// free(temp);
-// last->next=NULL;
+//delete last element
+last=first;
 
-// printf("\n");
+while(last->next->next!=NULL){
+    last=last->next;
+}
+temp=last->next;
+free(temp);
+last->next=NULL;
 
-// //view
-// printf("Linked List after deleting last element\n");
-// last=first;
-// while(last!=NULL){
-//     printf("%d\t",last->data);
-//     last=last->next;
-//     }
-// printf("\n");
+printf("\n");
+
+//view
+printf("Linked List after deleting last element\n");
+last=first;
+while(last!=NULL){
+    printf("%d\t",last->data);
+    last=last->next;
+    }
+printf("\n");
 // return 0;
 // }
 
