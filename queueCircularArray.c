@@ -1,4 +1,4 @@
-//circularQueueArray
+//circularQueueArray  
 #include<stdio.h>
 int arr[10];
 int front=-1;
@@ -33,7 +33,7 @@ int main(){
             }
         }
         else if (choice==2){
-            if (front==-1){
+            if (front==-1 && rear==-1){
                 printf("Queue is empty.\n");
             }
             else if(front==rear){
