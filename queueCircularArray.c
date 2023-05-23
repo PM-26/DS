@@ -46,12 +46,23 @@ int main(){
             }
         }
         else if(choice==3){
+            if (front>rear){
+                for (int i=front;i<11;i++){
+                    printf("%d\t",arr[i]);
+                }
+                for (int i=0;i<rear+1;i++){
+                    printf("%d",arr[i]);
+                }
+                printf("\n");
+            }
+            else{
             int temp=front;
             while(temp!=rear+1){
                 printf("%d \t",arr[temp]);
                 temp=temp+1;
             }
             printf("\n");
+            }
         }
         else{
             break;
