@@ -39,6 +39,7 @@ int main(){
                     temp->next=ptr;
                     ptr->prev=temp;
                     ptr->next=first;
+                    first->prev = ptr;
                     temp=ptr;
                 }
                 printf("Enter more?\n");
